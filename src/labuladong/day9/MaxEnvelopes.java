@@ -110,7 +110,7 @@ public class MaxEnvelopes {
     public static void main(String[] args) {
         //System.out.println(new MaxEnvelopes().maxEnvelopes354(new int[][]{{5, 4}, {6, 4}, {6, 7}, {2, 3}}));
         //System.out.println(new MaxEnvelopes().longestCommonSubsequence1143("bsb", "jkb"));
-        System.out.println(new MaxEnvelopes().minDistance583("sea", "eat"));
+        System.out.println(new MaxEnvelopes().minDistance583("bbbab", "babbb"));
 
     }
 }
