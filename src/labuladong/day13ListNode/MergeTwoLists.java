@@ -70,7 +70,7 @@ public class MergeTwoLists {
         return second == head ? head.next : head;
     }
 
-    public ListNode reverseBetween(ListNode head, int left, int right) {
+    public ListNode reverseBetween92(ListNode head, int left, int right) {
 
         if(head == null) return null;
         ListNode dummy = new ListNode(-1);
@@ -91,7 +91,7 @@ public class MergeTwoLists {
         successor = end.next;
         dummy.next = null;
         end.next = null;
-        ListNode begin =  reverseList(curr);
+        ListNode begin =  reverseList24(curr);
         dummy.next = begin;
         curr.next = successor;
         return left == 1? end : head;
@@ -99,7 +99,7 @@ public class MergeTwoLists {
 
 
     }
-    public ListNode reverseList(ListNode head) {
+    public ListNode reverseList24(ListNode head) {
         if(head == null) return null;
         ListNode dummy = new ListNode(-1);
         dummy.next = head;
@@ -129,6 +129,6 @@ public class MergeTwoLists {
 //        root4.next = root5;
         //root.next = root2;
         //System.out.println(new MergeTwoLists().removeNthFromEnd19(root, 1).val);
-        System.out.println(new MergeTwoLists().reverseBetween(root,1,1));
+        System.out.println(new MergeTwoLists().reverseBetween92(root,1,1));
     }
 }
